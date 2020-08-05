@@ -1,0 +1,250 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>阿里云开发校园合伙人创造营第三天作业保姆教程 | 杨Sir的博客</title>
+<link rel="shortcut icon" href="https://yxwgood.github.io/favicon.ico?v=1596635065777">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yxwgood.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="阿里云开发校园合伙人创造营第三天作业保姆教程 | 杨Sir的博客 - Atom Feed" href="https://yxwgood.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="今天学习的内容是 使用函数开发Web接口和钉钉机器人
+
+下面开始写作业
+首先登陆阿里云开发平台 https://workbench.aliyun.com/
+登录后 应用列表 点加号
+技术场景  选择 WEB
+解决方案:Midway Serv..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://yxwgood.github.io">
+  <img class="avatar" src="https://yxwgood.github.io/images/avatar.png?v=1596635065777" alt="">
+  </a>
+  <h1 class="site-title">
+    杨Sir的博客
+  </h1>
+  <p class="site-description">
+    念念不忘，必有回响
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              阿里云开发校园合伙人创造营第三天作业保姆教程
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-08-05
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="今天学习的内容是-使用函数开发web接口和钉钉机器人">今天学习的内容是 使用函数开发Web接口和钉钉机器人</h2>
+<figure data-type="image" tabindex="1"><img src="https://yxwgood.github.io/post-images/1596634553323.png" alt="" loading="lazy"></figure>
+<h2 id="下面开始写作业">下面开始写作业</h2>
+<p>首先登陆阿里云开发平台 https://workbench.aliyun.com/</p>
+<p>登录后 应用列表 点加号<br>
+技术场景  选择 WEB<br>
+解决方案:Midway Serverless一体化解决方案（Nodejs10）<br>
+点下一步<br>
+<img src="https://yxwgood.github.io/post-images/1596632761046.png" alt="" loading="lazy"></p>
+<p>进入后点左边 README.md<br>
+点下边 终端<br>
+首先需要安装开发依赖<br>
+输入下面的内容 回车</p>
+<pre><code class="language-Shell">npm i
+</code></pre>
+<p>安装需要一段时间，耐心等待</p>
+<p>启动 react 本地 watch 和 函数本地 Dev Server<br>
+在终端中会输出 本地 Dev Server 的URL链接</p>
+<pre><code class="language-Shell">npm run dev
+</code></pre>
+<p>终端里会显示</p>
+<p>开发服务器已成功启动</p>
+<p>请打开 &gt;&gt;&gt; http://此处省略</p>
+<p>按住cmd键点击那个链接进入 React App</p>
+<figure data-type="image" tabindex="2"><img src="https://yxwgood.github.io/post-images/1596633597483.png" alt="" loading="lazy"></figure>
+<p>返回刚才的界面</p>
+<p>因为要创建一个函数应用不是直接修改一个函数，所以先复制一个函数改改名</p>
+<p>展开 src/apis 点击index.ts</p>
+<p>复制</p>
+<pre><code>@Provide()
+export class IndexService {
+  @Func('index.handler')
+  async handler() {
+    return {
+      message: 'Hello Midway Serverless!',
+    }
+  }
+</code></pre>
+<p>粘贴到下方，然后修改里面的内容</p>
+<pre><code>@Provide()
+export class IndexService {
+  @Func('改这个词.handler')
+  async handler() {
+    return {
+      message: 'Hello Midway Serverless! +名字',
+    }
+  }
+</code></pre>
+<figure data-type="image" tabindex="3"><img src="https://yxwgood.github.io/post-images/1596633972042.png" alt="" loading="lazy"></figure>
+<p>保存文件</p>
+<p>然后在左边下方找到 f.yml 点击进入<br>
+找一个函数复制一份，比如</p>
+<pre><code>  list:
+    handler: list.handler
+    events:
+      - apigw:
+          path: /api/list
+</code></pre>
+<p>粘贴到下方进行修改</p>
+<pre><code>  改这个词:
+    handler: 改这个词.handler
+    events:
+      - apigw:
+          path: /api/改这个词
+</code></pre>
+<figure data-type="image" tabindex="4"><img src="https://yxwgood.github.io/post-images/1596634246798.png" alt="" loading="lazy"></figure>
+<p>保存文件</p>
+<p>然后进入刚才的 React App那个链接<br>
+在网址最后加上 /api/你填写的那个词语<br>
+回车进入<br>
+<img src="https://yxwgood.github.io/post-images/1596634403270.png" alt="" loading="lazy"></p>
+<p>完成 截屏交作业</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%BB%8A%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%86%85%E5%AE%B9%E6%98%AF-%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0%E5%BC%80%E5%8F%91web%E6%8E%A5%E5%8F%A3%E5%92%8C%E9%92%89%E9%92%89%E6%9C%BA%E5%99%A8%E4%BA%BA">今天学习的内容是 使用函数开发Web接口和钉钉机器人</a></li>
+<li><a href="#%E4%B8%8B%E9%9D%A2%E5%BC%80%E5%A7%8B%E5%86%99%E4%BD%9C%E4%B8%9A">下面开始写作业</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://yxwgood.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://yxwgood.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
