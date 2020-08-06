@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://a95r45.coding-pages.com</id>
+    <id>https://yxwgood.github.io</id>
     <title>杨Sir的博客</title>
-    <updated>2020-08-06T09:19:01.684Z</updated>
+    <updated>2020-08-06T09:19:54.791Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://a95r45.coding-pages.com"/>
-    <link rel="self" href="https://a95r45.coding-pages.com/atom.xml"/>
+    <link rel="alternate" href="https://yxwgood.github.io"/>
+    <link rel="self" href="https://yxwgood.github.io/atom.xml"/>
     <subtitle>念念不忘，必有回响</subtitle>
-    <logo>https://a95r45.coding-pages.com/images/avatar.png</logo>
-    <icon>https://a95r45.coding-pages.com/favicon.ico</icon>
+    <logo>https://yxwgood.github.io/images/avatar.png</logo>
+    <icon>https://yxwgood.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 杨Sir的博客</rights>
     <entry>
         <title type="html"><![CDATA[阿里云开发校园合伙人创造营第三天作业保姆教程]]></title>
-        <id>https://a95r45.coding-pages.com/post/a-li-yun-kai-fa-xiao-yuan-he-huo-ren-chuang-zao-ying-di-san-tian/</id>
-        <link href="https://a95r45.coding-pages.com/post/a-li-yun-kai-fa-xiao-yuan-he-huo-ren-chuang-zao-ying-di-san-tian/">
+        <id>https://yxwgood.github.io/post/a-li-yun-kai-fa-xiao-yuan-he-huo-ren-chuang-zao-ying-di-san-tian/</id>
+        <link href="https://yxwgood.github.io/post/a-li-yun-kai-fa-xiao-yuan-he-huo-ren-chuang-zao-ying-di-san-tian/">
         </link>
         <updated>2020-08-05T12:34:11.000Z</updated>
         <content type="html"><![CDATA[<h2 id="今天学习的内容是-使用函数开发web接口和钉钉机器人">今天学习的内容是 使用函数开发Web接口和钉钉机器人</h2>
-<figure data-type="image" tabindex="1"><img src="https://a95r45.coding-pages.com/post-images/1596634553323.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://yxwgood.github.io/post-images/1596634553323.png" alt="" loading="lazy"></figure>
 <h2 id="下面开始写作业">下面开始写作业</h2>
 <p>首先登陆阿里云开发平台 https://workbench.aliyun.com/</p>
 <p>登录后 应用列表 点加号<br>
 技术场景  选择 WEB<br>
 解决方案:Midway Serverless一体化解决方案（Nodejs10）<br>
 点下一步<br>
-<img src="https://a95r45.coding-pages.com/post-images/1596632761046.png" alt="" loading="lazy"></p>
+<img src="https://yxwgood.github.io/post-images/1596632761046.png" alt="" loading="lazy"></p>
 <p>进入后点左边 README.md<br>
 点下边 终端<br>
 首先需要安装开发依赖<br>
@@ -40,7 +40,7 @@
 <p>开发服务器已成功启动</p>
 <p>请打开 &gt;&gt;&gt; http://此处省略</p>
 <p>按住cmd键点击那个链接进入 React App</p>
-<figure data-type="image" tabindex="2"><img src="https://a95r45.coding-pages.com/post-images/1596633597483.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://yxwgood.github.io/post-images/1596633597483.png" alt="" loading="lazy"></figure>
 <p>返回刚才的界面</p>
 <p>因为要创建一个函数应用不是直接修改一个函数，所以先复制一个函数改改名</p>
 <p>展开 src/apis 点击index.ts</p>
@@ -64,7 +64,7 @@ export class IndexService {
     }
   }
 </code></pre>
-<figure data-type="image" tabindex="3"><img src="https://a95r45.coding-pages.com/post-images/1596633972042.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://yxwgood.github.io/post-images/1596633972042.png" alt="" loading="lazy"></figure>
 <p>保存文件</p>
 <p>然后在左边下方找到 f.yml 点击进入<br>
 找一个函数复制一份，比如</p>
@@ -81,19 +81,19 @@ export class IndexService {
       - apigw:
           path: /api/改这个词
 </code></pre>
-<figure data-type="image" tabindex="4"><img src="https://a95r45.coding-pages.com/post-images/1596634246798.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://yxwgood.github.io/post-images/1596634246798.png" alt="" loading="lazy"></figure>
 <p>保存文件</p>
 <p>然后进入刚才的 React App那个链接<br>
 在网址最后加上 /api/你填写的那个词语<br>
 回车进入<br>
-<img src="https://a95r45.coding-pages.com/post-images/1596634403270.png" alt="" loading="lazy"></p>
+<img src="https://yxwgood.github.io/post-images/1596634403270.png" alt="" loading="lazy"></p>
 <p>完成 截屏交作业</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://a95r45.coding-pages.com/post/hello-gridea/</id>
-        <link href="https://a95r45.coding-pages.com/post/hello-gridea/">
+        <id>https://yxwgood.github.io/post/hello-gridea/</id>
+        <link href="https://yxwgood.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
